@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="MarendeModelStoreContainer" CdmEntityContainer="MarendeEntities">
+    <EntitySetMapping Name="Orders">
+      <EntityTypeMapping TypeName="MarendeModel.Order">
+        <MappingFragment StoreEntitySet="Orders">
+          <ScalarProperty Name="DatumUnosa" ColumnName="DatumUnosa" />
+          <ScalarProperty Name="OrderId" ColumnName="OrderId" />
+          <ScalarProperty Name="Ime" ColumnName="Ime" />
+          <ScalarProperty Name="Prezime" ColumnName="Prezime" />
+          <ScalarProperty Name="TipKruh" ColumnName="TipKruh" />
+          <ScalarProperty Name="VelicinaSendvic" ColumnName="VelicinaSendvic" />
+          <ScalarProperty Name="SastavSendvicOsnovno" ColumnName="SastavSendvicOsnovno" />
+          <ScalarProperty Name="Kecap" ColumnName="Kecap" />
+          <ScalarProperty Name="Majoneza" ColumnName="Majoneza" />
+          <ScalarProperty Name="Tartar" ColumnName="Tartar" />
+          <ScalarProperty Name="TunaPasteta" ColumnName="TunaPasteta" />
+          <ScalarProperty Name="TunaKomdai" ColumnName="TunaKomdai" />
+          <ScalarProperty Name="Sir" ColumnName="Sir" />
+          <ScalarProperty Name="MladiSir" ColumnName="MladiSir" />
+          <ScalarProperty Name="Jaja" ColumnName="Jaja" />
+          <ScalarProperty Name="Kupus" ColumnName="Kupus" />
+          <ScalarProperty Name="Salata" ColumnName="Salata" />
+          <ScalarProperty Name="Pome" ColumnName="Pome" />
+          <ScalarProperty Name="Rukola" ColumnName="Rukola" />
+          <ScalarProperty Name="Krastavci" ColumnName="Krastavci" />
+          <ScalarProperty Name="SvjeziKrastavci" ColumnName="SvjeziKrastavci" />
+          <ScalarProperty Name="Kapula" ColumnName="Kapula" />
+          <ScalarProperty Name="Kukuruz" ColumnName="Kukuruz" />
+          <ScalarProperty Name="Paprika" ColumnName="Paprika" />
+          <ScalarProperty Name="Napomena" ColumnName="Napomena" />
+          <ScalarProperty Name="TotalCijena" ColumnName="TotalCijena" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RizzoCijenes">
+      <EntityTypeMapping TypeName="MarendeModel.RizzoCijene">
+        <MappingFragment StoreEntitySet="RizzoCijene">
+          <ScalarProperty Name="TunjSalata" ColumnName="TunjSalata" />
+          <ScalarProperty Name="GrckaSalata" ColumnName="GrckaSalata" />
+          <ScalarProperty Name="SezonskaSalata" ColumnName="SezonskaSalata" />
+          <ScalarProperty Name="DodatakNapomena" ColumnName="DodatakNapomena" />
+          <ScalarProperty Name="DodatakSir" ColumnName="DodatakSir" />
+          <ScalarProperty Name="VelikiTuna" ColumnName="VelikiTuna" />
+          <ScalarProperty Name="VelikiBudolaZimskaPrsutKulen" ColumnName="VelikiBudolaZimskaPrsutKulen" />
+          <ScalarProperty Name="VelikiPurecaMladiDimljena" ColumnName="VelikiPurecaMladiDimljena" />
+          <ScalarProperty Name="VelikiSirSunka" ColumnName="VelikiSirSunka" />
+          <ScalarProperty Name="Veliki" ColumnName="Veliki" />
+          <ScalarProperty Name="MaliTuna" ColumnName="MaliTuna" />
+          <ScalarProperty Name="MaliBudolaZimskaPrsutKulen" ColumnName="MaliBudolaZimskaPrsutKulen" />
+          <ScalarProperty Name="MaliPurecaDimljena" ColumnName="MaliPurecaDimljena" />
+          <ScalarProperty Name="MaliSirSunka" ColumnName="MaliSirSunka" />
+          <ScalarProperty Name="Mali" ColumnName="Mali" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OstaliCijenes">
+      <EntityTypeMapping TypeName="MarendeModel.OstaliCijene">
+        <MappingFragment StoreEntitySet="OstaliCijene">
+          <ScalarProperty Name="Pizza" ColumnName="Pizza" />
+          <ScalarProperty Name="Cevapi" ColumnName="Cevapi" />
+          <ScalarProperty Name="Cheesburger" ColumnName="Cheesburger" />
+          <ScalarProperty Name="Hamburger" ColumnName="Hamburger" />
+          <ScalarProperty Name="PiletinaSir" ColumnName="PiletinaSir" />
+          <ScalarProperty Name="Piletina" ColumnName="Piletina" />
+          <ScalarProperty Name="Veliki" ColumnName="Veliki" />
+          <ScalarProperty Name="Srednji" ColumnName="Srednji" />
+          <ScalarProperty Name="Mali" ColumnName="Mali" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

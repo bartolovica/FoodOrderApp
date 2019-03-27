@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="MarendeModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Order">
+    <Key>
+      <PropertyRef Name="OrderId" />
+    </Key>
+    <Property Name="OrderId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Ime" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Prezime" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="TipKruh" Type="MarendeModel.TipKruhType" />
+    <Property Name="VelicinaSendvic" Type="MarendeModel.VelicinaType" Nullable="false" />
+    <Property Name="SastavSendvicOsnovno" Type="MarendeModel.SendvicOsnovnoType" Nullable="false" />
+    <Property Name="Kecap" Type="Boolean" Nullable="false" />
+    <Property Name="Majoneza" Type="Boolean" Nullable="false" />
+    <Property Name="Tartar" Type="Boolean" Nullable="false" />
+    <Property Name="TunaPasteta" Type="Boolean" Nullable="false" />
+    <Property Name="TunaKomdai" Type="Boolean" Nullable="false" />
+    <Property Name="Sir" Type="Boolean" Nullable="false" />
+    <Property Name="MladiSir" Type="Boolean" Nullable="false" />
+    <Property Name="Jaja" Type="Boolean" Nullable="false" />
+    <Property Name="Kupus" Type="Boolean" Nullable="false" />
+    <Property Name="Salata" Type="Boolean" Nullable="false" />
+    <Property Name="Pome" Type="Boolean" Nullable="false" />
+    <Property Name="Rukola" Type="Boolean" Nullable="false" />
+    <Property Name="Krastavci" Type="Boolean" Nullable="false" />
+    <Property Name="SvjeziKrastavci" Type="Boolean" Nullable="false" />
+    <Property Name="Kapula" Type="Boolean" Nullable="false" />
+    <Property Name="Kukuruz" Type="Boolean" Nullable="false" />
+    <Property Name="Paprika" Type="Boolean" Nullable="false" />
+    <Property Name="Napomena" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="TotalCijena" Type="Decimal" Precision="10" Scale="4" Nullable="false" />
+    <Property Name="DatumUnosa" Type="DateTime" Precision="0" />
+  </EntityType>
+  <EntityContainer Name="MarendeEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Orders" EntityType="Self.Order" />
+    <EntitySet Name="RizzoCijenes" EntityType="MarendeModel.RizzoCijene" />
+    <EntitySet Name="OstaliCijenes" EntityType="MarendeModel.OstaliCijene" />
+  </EntityContainer>
+  <EnumType Name="TipKruhType" a:ExternalTypeName="Marende.DTO.Enums.TipKruhType" xmlns:a="http://schemas.microsoft.com/ado/2006/04/codegeneration" />
+  <EnumType Name="VelicinaType" a:ExternalTypeName="Marende.DTO.Enums.VelicinaType" xmlns:a="http://schemas.microsoft.com/ado/2006/04/codegeneration" />
+  <EnumType Name="SendvicOsnovnoType" a:ExternalTypeName="Marende.DTO.Enums.SendvicOsnovnoType" xmlns:a="http://schemas.microsoft.com/ado/2006/04/codegeneration" />
+  <EnumType Name="SendvicDodatnoType" a:ExternalTypeName="Marende.DTO.Enums.SendvicDodatnoType" xmlns:a="http://schemas.microsoft.com/ado/2006/04/codegeneration" />
+  <EntityType Name="RizzoCijene">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Mali" Type="Decimal" Nullable="false" Precision="10" Scale="4" />
+    <Property Name="MaliSirSunka" Type="Decimal" Nullable="false" Precision="10" Scale="4" />
+    <Property Name="MaliPurecaDimljena" Type="Decimal" Nullable="false" Precision="10" Scale="4" />
+    <Property Name="MaliBudolaZimskaPrsutKulen" Type="Decimal" Nullable="false" Precision="10" Scale="4" />
+    <Property Name="MaliTuna" Type="Decimal" Nullable="false" Precision="10" Scale="4" />
+    <Property Name="Veliki" Type="Decimal" Nullable="false" Precision="10" Scale="4" />
+    <Property Name="VelikiSirSunka" Type="Decimal" Nullable="false" Precision="10" Scale="4" />
+    <Property Name="VelikiPurecaMladiDimljena" Type="Decimal" Nullable="false" Precision="10" Scale="4" />
+    <Property Name="VelikiBudolaZimskaPrsutKulen" Type="Decimal" Nullable="false" Precision="10" Scale="4" />
+    <Property Name="VelikiTuna" Type="Decimal" Nullable="false" Precision="10" Scale="4" />
+    <Property Name="DodatakSir" Type="Decimal" Nullable="false" Precision="10" Scale="4" />
+    <Property Name="DodatakNapomena" Type="Decimal" Nullable="false" Precision="10" Scale="4" />
+    <Property Name="SezonskaSalata" Type="Decimal" Nullable="false" Precision="10" Scale="4" />
+    <Property Name="GrckaSalata" Type="Decimal" Nullable="false" Precision="10" Scale="4" />
+    <Property Name="TunjSalata" Type="Decimal" Nullable="false" Precision="10" Scale="4" />
+  </EntityType>
+  <EntityType Name="OstaliCijene">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Mali" Type="Decimal" Nullable="false" Precision="10" Scale="4" />
+    <Property Name="Srednji" Type="Decimal" Nullable="false" Precision="10" Scale="4" />
+    <Property Name="Veliki" Type="Decimal" Nullable="false" Precision="10" Scale="4" />
+    <Property Name="Piletina" Type="Decimal" Nullable="false" Precision="10" Scale="4" />
+    <Property Name="PiletinaSir" Type="Decimal" Nullable="false" Precision="10" Scale="4" />
+    <Property Name="Hamburger" Type="Decimal" Nullable="false" Precision="10" Scale="4" />
+    <Property Name="Cheesburger" Type="Decimal" Nullable="false" Precision="10" Scale="4" />
+    <Property Name="Cevapi" Type="Decimal" Nullable="false" Precision="10" Scale="4" />
+    <Property Name="Pizza" Type="Decimal" Nullable="false" Precision="10" Scale="4" />
+  </EntityType>
+</Schema>

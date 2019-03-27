@@ -1,0 +1,14 @@
+C:\Learning\DevU\Marende\Marende\Marende.Domain\bin\Release\Marende.Domain.dll
+C:\Learning\DevU\Marende\Marende\Marende.Domain\bin\Release\Marende.Domain.pdb
+C:\Learning\DevU\Marende\Marende\Marende.Domain\bin\Release\Marende.DTO.dll
+C:\Learning\DevU\Marende\Marende\Marende.Domain\bin\Release\Marende.Persistence.dll
+C:\Learning\DevU\Marende\Marende\Marende.Domain\bin\Release\EntityFramework.dll
+C:\Learning\DevU\Marende\Marende\Marende.Domain\bin\Release\Marende.DTO.pdb
+C:\Learning\DevU\Marende\Marende\Marende.Domain\bin\Release\Marende.Persistence.pdb
+C:\Learning\DevU\Marende\Marende\Marende.Domain\bin\Release\Marende.Persistence.dll.config
+C:\Learning\DevU\Marende\Marende\Marende.Domain\bin\Release\EntityFramework.xml
+C:\Learning\DevU\Marende\Marende\Marende.Domain\obj\Release\Marende.Domain.csprojAssemblyReference.cache
+C:\Learning\DevU\Marende\Marende\Marende.Domain\obj\Release\Marende.Domain.csproj.CoreCompileInputs.cache
+C:\Learning\DevU\Marende\Marende\Marende.Domain\obj\Release\Marende.Domain.csproj.CopyComplete
+C:\Learning\DevU\Marende\Marende\Marende.Domain\obj\Release\Marende.Domain.dll
+C:\Learning\DevU\Marende\Marende\Marende.Domain\obj\Release\Marende.Domain.pdb

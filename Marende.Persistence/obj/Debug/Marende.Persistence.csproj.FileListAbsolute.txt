@@ -1,0 +1,14 @@
+C:\Learning\DevU\Marende\Marende\Marende.Persistence\bin\Debug\Marende.Persistence.dll
+C:\Learning\DevU\Marende\Marende\Marende.Persistence\bin\Debug\Marende.Persistence.pdb
+C:\Learning\DevU\Marende\Marende\Marende.Persistence\bin\Debug\Marende.DTO.dll
+C:\Learning\DevU\Marende\Marende\Marende.Persistence\bin\Debug\Marende.DTO.pdb
+C:\Learning\DevU\Marende\Marende\Marende.Persistence\obj\Debug\Marende.Persistence.csprojAssemblyReference.cache
+C:\Learning\DevU\Marende\Marende\Marende.Persistence\obj\Debug\Marende.Persistence.csproj.CoreCompileInputs.cache
+C:\Learning\DevU\Marende\Marende\Marende.Persistence\obj\Debug\Marende.Persistence.csproj.CopyComplete
+C:\Learning\DevU\Marende\Marende\Marende.Persistence\obj\Debug\Marende.Persistence.dll
+C:\Learning\DevU\Marende\Marende\Marende.Persistence\obj\Debug\Marende.Persistence.pdb
+C:\Learning\DevU\Marende\Marende\Marende.Persistence\bin\Debug\Marende.Persistence.dll.config
+C:\Learning\DevU\Marende\Marende\Marende.Persistence\bin\Debug\EntityFramework.dll
+C:\Learning\DevU\Marende\Marende\Marende.Persistence\bin\Debug\EntityFramework.SqlServer.dll
+C:\Learning\DevU\Marende\Marende\Marende.Persistence\bin\Debug\EntityFramework.xml
+C:\Learning\DevU\Marende\Marende\Marende.Persistence\bin\Debug\EntityFramework.SqlServer.xml

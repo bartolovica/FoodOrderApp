@@ -1,0 +1,14 @@
+C:\Learning\DevU\Marende\Marende\Marende.Domain\bin\Debug\Marende.Domain.dll
+C:\Learning\DevU\Marende\Marende\Marende.Domain\bin\Debug\Marende.Domain.pdb
+C:\Learning\DevU\Marende\Marende\Marende.Domain\bin\Debug\Marende.DTO.dll
+C:\Learning\DevU\Marende\Marende\Marende.Domain\bin\Debug\Marende.Persistence.dll
+C:\Learning\DevU\Marende\Marende\Marende.Domain\bin\Debug\Marende.DTO.pdb
+C:\Learning\DevU\Marende\Marende\Marende.Domain\bin\Debug\Marende.Persistence.pdb
+C:\Learning\DevU\Marende\Marende\Marende.Domain\obj\Debug\Marende.Domain.csprojAssemblyReference.cache
+C:\Learning\DevU\Marende\Marende\Marende.Domain\obj\Debug\Marende.Domain.csproj.CoreCompileInputs.cache
+C:\Learning\DevU\Marende\Marende\Marende.Domain\obj\Debug\Marende.Domain.csproj.CopyComplete
+C:\Learning\DevU\Marende\Marende\Marende.Domain\obj\Debug\Marende.Domain.dll
+C:\Learning\DevU\Marende\Marende\Marende.Domain\obj\Debug\Marende.Domain.pdb
+C:\Learning\DevU\Marende\Marende\Marende.Domain\bin\Debug\EntityFramework.dll
+C:\Learning\DevU\Marende\Marende\Marende.Domain\bin\Debug\Marende.Persistence.dll.config
+C:\Learning\DevU\Marende\Marende\Marende.Domain\bin\Debug\EntityFramework.xml

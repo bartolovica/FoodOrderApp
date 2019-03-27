@@ -1,0 +1,259 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="MarendeModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Orders">
+          <Key>
+            <PropertyRef Name="OrderId" />
+          </Key>
+          <Property Name="OrderId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Ime" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Prezime" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="TipKruh" Type="int" />
+          <Property Name="VelicinaSendvic" Type="int" Nullable="false" />
+          <Property Name="SastavSendvicOsnovno" Type="int" Nullable="false" />
+          <Property Name="Kecap" Type="bit" Nullable="false" />
+          <Property Name="Majoneza" Type="bit" Nullable="false" />
+          <Property Name="Tartar" Type="bit" Nullable="false" />
+          <Property Name="TunaPasteta" Type="bit" Nullable="false" />
+          <Property Name="TunaKomdai" Type="bit" Nullable="false" />
+          <Property Name="Sir" Type="bit" Nullable="false" />
+          <Property Name="MladiSir" Type="bit" Nullable="false" />
+          <Property Name="Jaja" Type="bit" Nullable="false" />
+          <Property Name="Kupus" Type="bit" Nullable="false" />
+          <Property Name="Salata" Type="bit" Nullable="false" />
+          <Property Name="Pome" Type="bit" Nullable="false" />
+          <Property Name="Rukola" Type="bit" Nullable="false" />
+          <Property Name="Krastavci" Type="bit" Nullable="false" />
+          <Property Name="SvjeziKrastavci" Type="bit" Nullable="false" />
+          <Property Name="Kapula" Type="bit" Nullable="false" />
+          <Property Name="Kukuruz" Type="bit" Nullable="false" />
+          <Property Name="Paprika" Type="bit" Nullable="false" />
+          <Property Name="Napomena" Type="nvarchar" MaxLength="500" />
+          <Property Name="TotalCijena" Type="smallmoney" Nullable="false" />
+          <Property Name="DatumUnosa" Type="date" />
+        </EntityType>
+        <EntityType Name="OstaliCijene">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Mali" Type="smallmoney" Nullable="false" />
+          <Property Name="Srednji" Type="smallmoney" Nullable="false" />
+          <Property Name="Veliki" Type="smallmoney" Nullable="false" />
+          <Property Name="Piletina" Type="smallmoney" Nullable="false" />
+          <Property Name="PiletinaSir" Type="smallmoney" Nullable="false" />
+          <Property Name="Hamburger" Type="smallmoney" Nullable="false" />
+          <Property Name="Cheesburger" Type="smallmoney" Nullable="false" />
+          <Property Name="Cevapi" Type="smallmoney" Nullable="false" />
+          <Property Name="Pizza" Type="smallmoney" Nullable="false" />
+        </EntityType>
+        <EntityType Name="RizzoCijene">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Mali" Type="smallmoney" Nullable="false" />
+          <Property Name="MaliSirSunka" Type="smallmoney" Nullable="false" />
+          <Property Name="MaliPurecaDimljena" Type="smallmoney" Nullable="false" />
+          <Property Name="MaliBudolaZimskaPrsutKulen" Type="smallmoney" Nullable="false" />
+          <Property Name="MaliTuna" Type="smallmoney" Nullable="false" />
+          <Property Name="Veliki" Type="smallmoney" Nullable="false" />
+          <Property Name="VelikiSirSunka" Type="smallmoney" Nullable="false" />
+          <Property Name="VelikiPurecaMladiDimljena" Type="smallmoney" Nullable="false" />
+          <Property Name="VelikiBudolaZimskaPrsutKulen" Type="smallmoney" Nullable="false" />
+          <Property Name="VelikiTuna" Type="smallmoney" Nullable="false" />
+          <Property Name="DodatakSir" Type="smallmoney" Nullable="false" />
+          <Property Name="DodatakNapomena" Type="smallmoney" Nullable="false" />
+          <Property Name="SezonskaSalata" Type="smallmoney" Nullable="false" />
+          <Property Name="GrckaSalata" Type="smallmoney" Nullable="false" />
+          <Property Name="TunjSalata" Type="smallmoney" Nullable="false" />
+        </EntityType>
+        <EntityContainer Name="MarendeModelStoreContainer">
+          <EntitySet Name="Orders" EntityType="Self.Orders" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="OstaliCijene" EntityType="Self.OstaliCijene" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="RizzoCijene" EntityType="Self.RizzoCijene" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="MarendeModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Order">
+          <Key>
+            <PropertyRef Name="OrderId" />
+          </Key>
+          <Property Name="OrderId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Ime" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Prezime" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="TipKruh" Type="MarendeModel.TipKruhType" />
+          <Property Name="VelicinaSendvic" Type="MarendeModel.VelicinaType" Nullable="false" />
+          <Property Name="SastavSendvicOsnovno" Type="MarendeModel.SendvicOsnovnoType" Nullable="false" />
+          <Property Name="Kecap" Type="Boolean" Nullable="false" />
+          <Property Name="Majoneza" Type="Boolean" Nullable="false" />
+          <Property Name="Tartar" Type="Boolean" Nullable="false" />
+          <Property Name="TunaPasteta" Type="Boolean" Nullable="false" />
+          <Property Name="TunaKomdai" Type="Boolean" Nullable="false" />
+          <Property Name="Sir" Type="Boolean" Nullable="false" />
+          <Property Name="MladiSir" Type="Boolean" Nullable="false" />
+          <Property Name="Jaja" Type="Boolean" Nullable="false" />
+          <Property Name="Kupus" Type="Boolean" Nullable="false" />
+          <Property Name="Salata" Type="Boolean" Nullable="false" />
+          <Property Name="Pome" Type="Boolean" Nullable="false" />
+          <Property Name="Rukola" Type="Boolean" Nullable="false" />
+          <Property Name="Krastavci" Type="Boolean" Nullable="false" />
+          <Property Name="SvjeziKrastavci" Type="Boolean" Nullable="false" />
+          <Property Name="Kapula" Type="Boolean" Nullable="false" />
+          <Property Name="Kukuruz" Type="Boolean" Nullable="false" />
+          <Property Name="Paprika" Type="Boolean" Nullable="false" />
+          <Property Name="Napomena" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="TotalCijena" Type="Decimal" Precision="10" Scale="4" Nullable="false" />
+          <Property Name="DatumUnosa" Type="DateTime" Precision="0" />
+        </EntityType>
+        <EntityContainer Name="MarendeEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Orders" EntityType="Self.Order" />
+          <EntitySet Name="RizzoCijenes" EntityType="MarendeModel.RizzoCijene" />
+          <EntitySet Name="OstaliCijenes" EntityType="MarendeModel.OstaliCijene" />
+        </EntityContainer>
+        <EnumType Name="TipKruhType" a:ExternalTypeName="Marende.DTO.Enums.TipKruhType" xmlns:a="http://schemas.microsoft.com/ado/2006/04/codegeneration" />
+        <EnumType Name="VelicinaType" a:ExternalTypeName="Marende.DTO.Enums.VelicinaType" xmlns:a="http://schemas.microsoft.com/ado/2006/04/codegeneration" />
+        <EnumType Name="SendvicOsnovnoType" a:ExternalTypeName="Marende.DTO.Enums.SendvicOsnovnoType" xmlns:a="http://schemas.microsoft.com/ado/2006/04/codegeneration" />
+        <EnumType Name="SendvicDodatnoType" a:ExternalTypeName="Marende.DTO.Enums.SendvicDodatnoType" xmlns:a="http://schemas.microsoft.com/ado/2006/04/codegeneration" />
+        <EntityType Name="RizzoCijene">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Mali" Type="Decimal" Nullable="false" Precision="10" Scale="4" />
+          <Property Name="MaliSirSunka" Type="Decimal" Nullable="false" Precision="10" Scale="4" />
+          <Property Name="MaliPurecaDimljena" Type="Decimal" Nullable="false" Precision="10" Scale="4" />
+          <Property Name="MaliBudolaZimskaPrsutKulen" Type="Decimal" Nullable="false" Precision="10" Scale="4" />
+          <Property Name="MaliTuna" Type="Decimal" Nullable="false" Precision="10" Scale="4" />
+          <Property Name="Veliki" Type="Decimal" Nullable="false" Precision="10" Scale="4" />
+          <Property Name="VelikiSirSunka" Type="Decimal" Nullable="false" Precision="10" Scale="4" />
+          <Property Name="VelikiPurecaMladiDimljena" Type="Decimal" Nullable="false" Precision="10" Scale="4" />
+          <Property Name="VelikiBudolaZimskaPrsutKulen" Type="Decimal" Nullable="false" Precision="10" Scale="4" />
+          <Property Name="VelikiTuna" Type="Decimal" Nullable="false" Precision="10" Scale="4" />
+          <Property Name="DodatakSir" Type="Decimal" Nullable="false" Precision="10" Scale="4" />
+          <Property Name="DodatakNapomena" Type="Decimal" Nullable="false" Precision="10" Scale="4" />
+          <Property Name="SezonskaSalata" Type="Decimal" Nullable="false" Precision="10" Scale="4" />
+          <Property Name="GrckaSalata" Type="Decimal" Nullable="false" Precision="10" Scale="4" />
+          <Property Name="TunjSalata" Type="Decimal" Nullable="false" Precision="10" Scale="4" />
+        </EntityType>
+        <EntityType Name="OstaliCijene">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Mali" Type="Decimal" Nullable="false" Precision="10" Scale="4" />
+          <Property Name="Srednji" Type="Decimal" Nullable="false" Precision="10" Scale="4" />
+          <Property Name="Veliki" Type="Decimal" Nullable="false" Precision="10" Scale="4" />
+          <Property Name="Piletina" Type="Decimal" Nullable="false" Precision="10" Scale="4" />
+          <Property Name="PiletinaSir" Type="Decimal" Nullable="false" Precision="10" Scale="4" />
+          <Property Name="Hamburger" Type="Decimal" Nullable="false" Precision="10" Scale="4" />
+          <Property Name="Cheesburger" Type="Decimal" Nullable="false" Precision="10" Scale="4" />
+          <Property Name="Cevapi" Type="Decimal" Nullable="false" Precision="10" Scale="4" />
+          <Property Name="Pizza" Type="Decimal" Nullable="false" Precision="10" Scale="4" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="MarendeModelStoreContainer" CdmEntityContainer="MarendeEntities">
+          <EntitySetMapping Name="Orders">
+            <EntityTypeMapping TypeName="MarendeModel.Order">
+              <MappingFragment StoreEntitySet="Orders">
+                <ScalarProperty Name="DatumUnosa" ColumnName="DatumUnosa" />
+                <ScalarProperty Name="OrderId" ColumnName="OrderId" />
+                <ScalarProperty Name="Ime" ColumnName="Ime" />
+                <ScalarProperty Name="Prezime" ColumnName="Prezime" />
+                <ScalarProperty Name="TipKruh" ColumnName="TipKruh" />
+                <ScalarProperty Name="VelicinaSendvic" ColumnName="VelicinaSendvic" />
+                <ScalarProperty Name="SastavSendvicOsnovno" ColumnName="SastavSendvicOsnovno" />
+                <ScalarProperty Name="Kecap" ColumnName="Kecap" />
+                <ScalarProperty Name="Majoneza" ColumnName="Majoneza" />
+                <ScalarProperty Name="Tartar" ColumnName="Tartar" />
+                <ScalarProperty Name="TunaPasteta" ColumnName="TunaPasteta" />
+                <ScalarProperty Name="TunaKomdai" ColumnName="TunaKomdai" />
+                <ScalarProperty Name="Sir" ColumnName="Sir" />
+                <ScalarProperty Name="MladiSir" ColumnName="MladiSir" />
+                <ScalarProperty Name="Jaja" ColumnName="Jaja" />
+                <ScalarProperty Name="Kupus" ColumnName="Kupus" />
+                <ScalarProperty Name="Salata" ColumnName="Salata" />
+                <ScalarProperty Name="Pome" ColumnName="Pome" />
+                <ScalarProperty Name="Rukola" ColumnName="Rukola" />
+                <ScalarProperty Name="Krastavci" ColumnName="Krastavci" />
+                <ScalarProperty Name="SvjeziKrastavci" ColumnName="SvjeziKrastavci" />
+                <ScalarProperty Name="Kapula" ColumnName="Kapula" />
+                <ScalarProperty Name="Kukuruz" ColumnName="Kukuruz" />
+                <ScalarProperty Name="Paprika" ColumnName="Paprika" />
+                <ScalarProperty Name="Napomena" ColumnName="Napomena" />
+                <ScalarProperty Name="TotalCijena" ColumnName="TotalCijena" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="RizzoCijenes">
+            <EntityTypeMapping TypeName="MarendeModel.RizzoCijene">
+              <MappingFragment StoreEntitySet="RizzoCijene">
+                <ScalarProperty Name="TunjSalata" ColumnName="TunjSalata" />
+                <ScalarProperty Name="GrckaSalata" ColumnName="GrckaSalata" />
+                <ScalarProperty Name="SezonskaSalata" ColumnName="SezonskaSalata" />
+                <ScalarProperty Name="DodatakNapomena" ColumnName="DodatakNapomena" />
+                <ScalarProperty Name="DodatakSir" ColumnName="DodatakSir" />
+                <ScalarProperty Name="VelikiTuna" ColumnName="VelikiTuna" />
+                <ScalarProperty Name="VelikiBudolaZimskaPrsutKulen" ColumnName="VelikiBudolaZimskaPrsutKulen" />
+                <ScalarProperty Name="VelikiPurecaMladiDimljena" ColumnName="VelikiPurecaMladiDimljena" />
+                <ScalarProperty Name="VelikiSirSunka" ColumnName="VelikiSirSunka" />
+                <ScalarProperty Name="Veliki" ColumnName="Veliki" />
+                <ScalarProperty Name="MaliTuna" ColumnName="MaliTuna" />
+                <ScalarProperty Name="MaliBudolaZimskaPrsutKulen" ColumnName="MaliBudolaZimskaPrsutKulen" />
+                <ScalarProperty Name="MaliPurecaDimljena" ColumnName="MaliPurecaDimljena" />
+                <ScalarProperty Name="MaliSirSunka" ColumnName="MaliSirSunka" />
+                <ScalarProperty Name="Mali" ColumnName="Mali" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="OstaliCijenes">
+            <EntityTypeMapping TypeName="MarendeModel.OstaliCijene">
+              <MappingFragment StoreEntitySet="OstaliCijene">
+                <ScalarProperty Name="Pizza" ColumnName="Pizza" />
+                <ScalarProperty Name="Cevapi" ColumnName="Cevapi" />
+                <ScalarProperty Name="Cheesburger" ColumnName="Cheesburger" />
+                <ScalarProperty Name="Hamburger" ColumnName="Hamburger" />
+                <ScalarProperty Name="PiletinaSir" ColumnName="PiletinaSir" />
+                <ScalarProperty Name="Piletina" ColumnName="Piletina" />
+                <ScalarProperty Name="Veliki" ColumnName="Veliki" />
+                <ScalarProperty Name="Srednji" ColumnName="Srednji" />
+                <ScalarProperty Name="Mali" ColumnName="Mali" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

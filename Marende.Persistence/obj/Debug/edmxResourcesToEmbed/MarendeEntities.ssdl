@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="MarendeModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Orders">
+    <Key>
+      <PropertyRef Name="OrderId" />
+    </Key>
+    <Property Name="OrderId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Ime" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Prezime" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="TipKruh" Type="int" />
+    <Property Name="VelicinaSendvic" Type="int" Nullable="false" />
+    <Property Name="SastavSendvicOsnovno" Type="int" Nullable="false" />
+    <Property Name="Kecap" Type="bit" Nullable="false" />
+    <Property Name="Majoneza" Type="bit" Nullable="false" />
+    <Property Name="Tartar" Type="bit" Nullable="false" />
+    <Property Name="TunaPasteta" Type="bit" Nullable="false" />
+    <Property Name="TunaKomdai" Type="bit" Nullable="false" />
+    <Property Name="Sir" Type="bit" Nullable="false" />
+    <Property Name="MladiSir" Type="bit" Nullable="false" />
+    <Property Name="Jaja" Type="bit" Nullable="false" />
+    <Property Name="Kupus" Type="bit" Nullable="false" />
+    <Property Name="Salata" Type="bit" Nullable="false" />
+    <Property Name="Pome" Type="bit" Nullable="false" />
+    <Property Name="Rukola" Type="bit" Nullable="false" />
+    <Property Name="Krastavci" Type="bit" Nullable="false" />
+    <Property Name="SvjeziKrastavci" Type="bit" Nullable="false" />
+    <Property Name="Kapula" Type="bit" Nullable="false" />
+    <Property Name="Kukuruz" Type="bit" Nullable="false" />
+    <Property Name="Paprika" Type="bit" Nullable="false" />
+    <Property Name="Napomena" Type="nvarchar" MaxLength="500" />
+    <Property Name="TotalCijena" Type="smallmoney" Nullable="false" />
+    <Property Name="DatumUnosa" Type="date" />
+  </EntityType>
+  <EntityType Name="OstaliCijene">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Mali" Type="smallmoney" Nullable="false" />
+    <Property Name="Srednji" Type="smallmoney" Nullable="false" />
+    <Property Name="Veliki" Type="smallmoney" Nullable="false" />
+    <Property Name="Piletina" Type="smallmoney" Nullable="false" />
+    <Property Name="PiletinaSir" Type="smallmoney" Nullable="false" />
+    <Property Name="Hamburger" Type="smallmoney" Nullable="false" />
+    <Property Name="Cheesburger" Type="smallmoney" Nullable="false" />
+    <Property Name="Cevapi" Type="smallmoney" Nullable="false" />
+    <Property Name="Pizza" Type="smallmoney" Nullable="false" />
+  </EntityType>
+  <EntityType Name="RizzoCijene">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Mali" Type="smallmoney" Nullable="false" />
+    <Property Name="MaliSirSunka" Type="smallmoney" Nullable="false" />
+    <Property Name="MaliPurecaDimljena" Type="smallmoney" Nullable="false" />
+    <Property Name="MaliBudolaZimskaPrsutKulen" Type="smallmoney" Nullable="false" />
+    <Property Name="MaliTuna" Type="smallmoney" Nullable="false" />
+    <Property Name="Veliki" Type="smallmoney" Nullable="false" />
+    <Property Name="VelikiSirSunka" Type="smallmoney" Nullable="false" />
+    <Property Name="VelikiPurecaMladiDimljena" Type="smallmoney" Nullable="false" />
+    <Property Name="VelikiBudolaZimskaPrsutKulen" Type="smallmoney" Nullable="false" />
+    <Property Name="VelikiTuna" Type="smallmoney" Nullable="false" />
+    <Property Name="DodatakSir" Type="smallmoney" Nullable="false" />
+    <Property Name="DodatakNapomena" Type="smallmoney" Nullable="false" />
+    <Property Name="SezonskaSalata" Type="smallmoney" Nullable="false" />
+    <Property Name="GrckaSalata" Type="smallmoney" Nullable="false" />
+    <Property Name="TunjSalata" Type="smallmoney" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="MarendeModelStoreContainer">
+    <EntitySet Name="Orders" EntityType="Self.Orders" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="OstaliCijene" EntityType="Self.OstaliCijene" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RizzoCijene" EntityType="Self.RizzoCijene" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

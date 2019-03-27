@@ -1,0 +1,6 @@
+C:\Learning\DevU\Marende\Marende\Marende.DTO\bin\Debug\Marende.DTO.dll
+C:\Learning\DevU\Marende\Marende\Marende.DTO\bin\Debug\Marende.DTO.pdb
+C:\Learning\DevU\Marende\Marende\Marende.DTO\obj\Debug\Marende.DTO.csproj.CoreCompileInputs.cache
+C:\Learning\DevU\Marende\Marende\Marende.DTO\obj\Debug\Marende.DTO.dll
+C:\Learning\DevU\Marende\Marende\Marende.DTO\obj\Debug\Marende.DTO.pdb
+C:\Learning\DevU\Marende\Marende\Marende.DTO\obj\Debug\Marende.DTO.csprojAssemblyReference.cache
